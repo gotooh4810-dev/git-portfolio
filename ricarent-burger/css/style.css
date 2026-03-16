@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* 共通 */
+#js-btn:hover{
+    cursor: pointer;
+}
+
+
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    background-color: #F6EADD;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 120px 0;
+}
+
+.sec-ttl{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    background-color: #D62201;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 54px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+.sec-link{
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+    
+/* ヘッダー */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+h1{
+    width: 75px;
+    padding: 16px 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    font-weight: 700;
+}
+
+
+/* キーヴィジュアル */
+.fv img{
+    width: 100%;
+    height: calc(100vh - 115px);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/* お知らせ */
+.info-cont{
+    background-color: #fff;
+}
+
+.info-cont h3{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 40px 40px 24px 40px;
+    text-align: center;
+}
+
+.info-cont p{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 40px 40px 40px;
+}
+
+
+/* メニュー */
+#menu{
+    background-color: #FFAA01;
+}
+
+.menu-cont ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+}
+
+.menu-cont h4{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 40px 0 16px;
+}
+
+.menu-cont p{
+    font-weight: 700;
+}
+
+#menu .sec-link{
+    border-bottom: 1px solid #fff;
+}
+
+#menu .sec-link a{
+    color: #fff;
+}
+
+
+/* アクセス */
+.access-cont{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+iframe{
+    width: 50%;
+    height: 366px;
+}
+
+.access-info h3{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.access-info li{
+    margin-bottom: 24px;
+}
+
+
+/* フッター */
+footer{
+    background-color: #FFAA01;
+    text-align: center;
+}
+
+small{
+    display: block;
+    padding: 40px 0;
+}
+
+
+
+
+/* スマフォ ーーーーーーーーーーーーー*/
+@media (max-width: 767px){
+    
+    
+    /* メニュー */
+    .menu-cont ul{
+        flex-direction: column;
+    }
+
+    /* アクセス */
+    .access-cont{
+        flex-direction: column;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
