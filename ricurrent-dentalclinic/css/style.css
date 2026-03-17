@@ -33,7 +33,7 @@ li {
 .sec-ttl{
     font-size: 48px;
     text-align: center;
-    margin-top: 120px;
+    margin: 120px 0;
 }
 
 /********** ヘッダー **********/
@@ -89,9 +89,7 @@ header{
 
 nav ul{
     display: flex;
-    /* justify-content: space-between; */
     justify-content: flex-end;
-    /* gap: 30px; */
     margin-top: 20px;
 }
 
@@ -144,10 +142,10 @@ video{
 }
 
 
-/*** アバウトセクション ****/
+/*** アバウト(当院について)セクション ****/
 .about h3{
     font-size: 32px;
-    margin: 64px 0 48px;
+    margin: 64px 0;
 }
 
 .doctor-cont{
@@ -188,7 +186,7 @@ video{
     align-items: center;
 }
 
-.hospital-introduction-item:nth-child(odd){
+.hospital-introduction-item:nth-of-type(even){
     flex-direction: row-reverse;
 }
 
@@ -209,4 +207,49 @@ video{
 .hospital-introduction-text p:nth-child(1){
     text-align: center;
     margin-bottom: 10px;
+}
+
+
+
+/*** ディティール(診療内容)セクション ****/
+
+.details-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.details-item{
+    border: 1px solid #333;
+    border-radius: 30px;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+}
+
+.details-item p{
+    font-size: 32px;
+}
+
+/*** クエスチョン(よくあるご質問)セクション ****/
+
+.question-item{
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-top: 64px;
+}
+
+.question-ttl{
+    font-size: 32px;
+}
+
+.question-ttl::before,
+.question-ttl::after{
+
+}
+
+.answer{
+    font-size: 24px;
+    padding: 64px;
 }
