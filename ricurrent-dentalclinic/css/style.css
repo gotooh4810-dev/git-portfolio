@@ -30,12 +30,20 @@ li {
     margin: 0 auto;
 }
 
+.sec-ttl{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 120px;
+}
+
 /********** ヘッダー **********/
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(5px);
 }
 
 .header-inner{
@@ -60,6 +68,7 @@ header{
 
 .reserve ul{
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
 }
 
@@ -80,12 +89,23 @@ header{
 
 nav ul{
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    /* gap: 30px; */
     margin-top: 20px;
 }
 
-nav ul li a{
+nav li{
+    border-right: 1px solid #000;
+    padding: 0 25px;
+}
+
+nav li:nth-child(4){
+    padding-right: 0;
+    border: none;
+}
+
+nav a{
     font-size: 24px;
 }
 
@@ -121,4 +141,72 @@ video{
 
 .fv-cont img{
     width: 45%;
+}
+
+
+/*** アバウトセクション ****/
+.about h3{
+    font-size: 32px;
+    margin: 64px 0 48px;
+}
+
+.doctor-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.doctor-cont img{
+    width: 55%;
+    border-radius: 30px;
+}
+
+.doctor-text{
+    width: 55%;
+    position: absolute;
+    right: 0;
+    background-color: rgb(74, 133, 222, .5);
+    border-radius: 30px;
+    padding: 24px;
+}
+
+.doctor-text p:nth-child(1){
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.doctor-text p:nth-child(2){
+    font-size: 20px;
+}
+
+.hospital-introduction-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hospital-introduction-item:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.hospital-introduction-item+.hospital-introduction-item{
+    margin-top: 32px;
+}
+
+.hospital-introduction-item img{
+    width: 55%;
+}
+
+.hospital-introduction-text{
+    width: 40%;
+    font-size: 24px;
+    color: #2967C4;
+}
+
+.hospital-introduction-text p:nth-child(1){
+    text-align: center;
+    margin-bottom: 10px;
 }

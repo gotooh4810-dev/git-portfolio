@@ -1,72 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ricurrent dental clinic</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <script src="./js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-inner wrapper">
-            <h1>
-                <div class="logo-main">
-                    <p>リカレント歯科</p>
-                </div>
-                <div class="logo-sub">
-                    <img src="./img/brush.png" alt="ロゴ">
-                    <p>Ricurrent Dental Clinic</p>
-                </div>
-            </h1>
-            <div class="header-contents">
-                <div class="reserve">
-                    <ul>
-                        <li>
-                            <img src="./img/tell.png" alt="電話アイコン">
-                            <p>電話予約</p>
-                            <p>000-0000-0000</p>
-                        </li>
-                        <li>
-                            <img src="./img/notepc.png" alt="パソコンアイコン">
-                            <p>WEB予約</p>
-                        </li>
-                    </ul>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">当院について</a></li>
-                        <li><a href="#">診療内容</a></li>
-                        <li><a href="#">よくあるご質問</a></li>
-                        <li><a href="#">アクセス</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="header-inner wrapper">
+        <h1>
+          <div class="logo-main">
+            <p>リカレント歯科</p>
+          </div>
+          <div class="logo-sub">
+            <img src="./img/brush.png" alt="ロゴ" />
+            <p>Ricurrent Dental Clinic</p>
+          </div>
+        </h1>
+        <div class="header-contents">
+          <div class="reserve">
+            <ul>
+              <li>
+                <img src="./img/tell.png" alt="電話アイコン" />
+                <p>電話予約</p>
+                <p>000-0000-0000</p>
+              </li>
+              <li>
+                <img src="./img/notepc.png" alt="パソコンアイコン" />
+                <p>WEB予約</p>
+              </li>
+            </ul>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">当院について</a></li>
+              <li><a href="#">診療内容</a></li>
+              <li><a href="#">よくあるご質問</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    
+
     <main>
-        <div class="fv">
-            <video src="./img/fv.mp4" autoplay muted loop></video>
-            <div class="fv-cont">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.421169939074!2d130.3904462764074!3d33.59437507333293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913a138f36f9%3A0xfc9028c55a16960f!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844OrIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1773646005330!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img src="./img/medical-hours.png" alt="診療時間">
-            </div>
+      <div class="fv">
+        <video src="./img/fv.mp4" autoplay muted loop></video>
+        <div class="fv-cont">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.421169939074!2d130.3904462764074!3d33.59437507333293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913a138f36f9%3A0xfc9028c55a16960f!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844OrIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1773646005330!5m2!1sja!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <img src="./img/medical-hours.png" alt="診療時間" />
         </div>
+      </div>
 
-        <section></section>
+      <div class="wrapper">
+          <section class="about">
+            <h2 class="sec-ttl">当院について</h2>
+            <div class="doctor-greeting">
+                <h3>院長挨拶</h3>
+                <div class="doctor-cont">
+                    <img src="./img/doctor.jpg" alt="院長" />
+                    <div class="doctor-text">
+                        <p>「お口の健康から、皆さまの笑顔を守ります。」</p>
+                        <p>
+                          当院のホームページをご覧いただき、ありがとうございます。院長のリカレント太郎です。
+                          歯科医院に対して「痛い」「怖い」といった不安をお持ちの方も多いと思います。当院では、患者さまのお話を丁寧に伺い、安心して治療を受けていただける歯科医院であることを大切にしています。
+                          当院のモットーは「お口の健康から、皆さまの笑顔を守ります。」です。地域の皆さまのお口の健康を支えられる存在を目指しています。お口のことで気になることがありましたら、どうぞお気軽にご相談ください。<br>
+                          ー院長 リカレント太郎
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hospital-introduction">
+                <h3>院内紹介</h3>
+                <div class="hospital-introduction-item">
+                    <img src="./img/about1.png" alt="外観">
+                    <div class="hospital-introduction-text">
+                        <p>クリニック外観</p>
+                        <p>地域の皆さまに安心してご来院いただけるよう、明るく親しみやすい外観のクリニックです。初めての方でも入りやすい雰囲気づくりを大切にし、どなたでも気軽に立ち寄っていただける歯科医院を目指しています。お口の健康について気になることがありましたら、どうぞお気軽にご相談ください。</p>
+                    </div>
+                </div>
+                <div class="hospital-introduction-item">
+                    <img src="./img/about2.png" alt="待合室">
+                    <div class="hospital-introduction-text">
+                        <p>待合室</p>
+                        <p>患者さまにリラックスしてお過ごしいただけるよう、落ち着いた雰囲気の待合室をご用意しています。診療までの時間をできるだけ快適にお過ごしいただけるよう、清潔で居心地のよい空間づくりを大切にしています。どなたでも安心して通える歯科医院を目指しています。</p>
+                    </div>
+                </div>
+                <div class="hospital-introduction-item">
+                    <img src="./img/about3.png" alt="診察室">
+                    <div class="hospital-introduction-text">
+                        <p>診察室</p>
+                        <p>清潔で落ち着いた環境の診察室で、患者さま一人ひとりに丁寧な診療を行っています。安心して治療を受けていただけるよう、衛生管理を徹底し、リラックスできる環境づくりを心がけています。患者さまのお悩みやご希望をしっかりとお伺いし、わかりやすい説明と丁寧な治療を大切にしています</p>
+                    </div>
+                </div>
+                <div class="hospital-introduction-item">
+                    <img src="./img/about4.png" alt="キッズスペース">
+                    <div class="hospital-introduction-text">
+                        <p>キッズスペース</p>
+                        <p>小さなお子さま連れの方にも安心して通っていただけるよう、院内にはキッズスペースをご用意しています。待ち時間も楽しく過ごしていただけるよう、お子さまが安心して遊べる環境づくりを大切にしています。ご家族皆さまで安心して通える歯科医院を目指しています🦷</p>
+                    </div>
+                </div>
+            </div>
+            
+
+          </section>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
