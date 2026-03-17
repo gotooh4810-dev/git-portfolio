@@ -106,15 +106,19 @@ video{
     position: absolute;
     bottom: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 50%;
 }
 
 .fv-cont iframe{
-    width: 50%;
+    width: 45%;
     height: auto;
     border-radius: 50px;
     aspect-ratio: 16/9;
 }
 
 .fv-cont img{
-    width: 50%;
+    width: 45%;
 }
