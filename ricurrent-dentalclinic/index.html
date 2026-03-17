@@ -23,13 +23,15 @@
     <header>
       <div class="header-inner wrapper">
         <h1>
-          <div class="logo-main">
-            <p>リカレント歯科</p>
-          </div>
-          <div class="logo-sub">
-            <img src="./img/brush.png" alt="ロゴ" />
-            <p>Ricurrent Dental Clinic</p>
-          </div>
+          <a href="index.html">
+              <div class="logo-main">
+                <p>リカレント歯科</p>
+              </div>
+              <div class="logo-sub">
+                <img src="./img/brush.png" alt="ロゴ" />
+                <p>Ricurrent Dental Clinic</p>
+              </div>
+          </a>
         </h1>
         <div class="header-contents">
           <div class="reserve">
@@ -47,10 +49,10 @@
           </div>
           <nav>
             <ul>
-              <li><a href="#">当院について</a></li>
-              <li><a href="#">診療内容</a></li>
-              <li><a href="#">よくあるご質問</a></li>
-              <li><a href="#">アクセス</a></li>
+              <li><a href="#about">当院について</a></li>
+              <li><a href="#details">診療内容</a></li>
+              <li><a href="#question">よくあるご質問</a></li>
+              <li><a href="#access">アクセス</a></li>
             </ul>
           </nav>
         </div>
@@ -73,7 +75,7 @@
       </div>
 
       <div class="wrapper">
-        <section class="about">
+        <section id="about" class="about">
           <h2 class="sec-ttl">当院について</h2>
           <div class="doctor-greeting">
             <h3>院長挨拶</h3>
@@ -132,7 +134,7 @@
         </section>
 
 
-        <section class="details">
+        <section id="details" class="details">
           <h2 class="sec-ttl">診療内容</h2>
           <div class="details-cont">
             <div class="details-item">
@@ -151,78 +153,94 @@
             </div>
           </div>
         </section>
-        
 
-        <section class="question">
+
+        <section id="question" class="question">
           <h3 class="sec-ttl">よくあるご質問</h3>
           <div class="question-item">
             <p class="question-ttl">Q1. 初めてですが、予約は必要ですか？</p>
-            <p class="answer">
-              A.
-              当院では、患者さまをお待たせしないために予約制を基本としております。
-              お電話またはWEB予約からご予約のうえご来院ください。
-              急な痛みなどの場合は、可能な限り対応いたしますのでお気軽にご連絡ください。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A.
+                  当院では、患者さまをお待たせしないために予約制を基本としております。
+                  お電話またはWEB予約からご予約のうえご来院ください。
+                  急な痛みなどの場合は、可能な限り対応いたしますのでお気軽にご連絡ください。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">Q2. 治療は痛くありませんか？</p>
-            <p class="answer">
-              A. 歯科治療に不安をお持ちの方も多いと思います。
-              当院ではできるだけ痛みを抑えた治療を心がけています。
-              患者さまの状態やご希望を丁寧にお伺いし、無理のない治療を進めていきます。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A. 歯科治療に不安をお持ちの方も多いと思います。
+                  当院ではできるだけ痛みを抑えた治療を心がけています。
+                  患者さまの状態やご希望を丁寧にお伺いし、無理のない治療を進めていきます。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">Q3. 保険診療は受けられますか？</p>
-            <p class="answer">
-              A. はい、当院では健康保険を利用した保険診療に対応しております。
-              症状や治療内容によっては自費診療をご案内する場合もありますが、
-              その際は事前にわかりやすくご説明いたします。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A. はい、当院では健康保険を利用した保険診療に対応しております。
+                  症状や治療内容によっては自費診療をご案内する場合もありますが、
+                  その際は事前にわかりやすくご説明いたします。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">Q4. 子どもも診てもらえますか？</p>
-            <p class="answer">
-              A. はい、小さなお子さまの診療にも対応しております。
-              お子さまが歯医者を怖がらないよう、無理のないペースでやさしく診療を行います。
-              ご家族皆さまで安心してご来院ください。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A. はい、小さなお子さまの診療にも対応しております。
+                  お子さまが歯医者を怖がらないよう、無理のないペースでやさしく診療を行います。
+                  ご家族皆さまで安心してご来院ください。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">
               Q5. 定期検診はどのくらいの頻度で受ければいいですか？
             </p>
-            <p class="answer">
-              A.
-              お口の状態にもよりますが、一般的には3〜6か月に一度の定期検診をおすすめしています。
-              定期的な検診とクリーニングを行うことで、むし歯や歯周病の予防につながります。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A.
+                  お口の状態にもよりますが、一般的には3〜6か月に一度の定期検診をおすすめしています。
+                  定期的な検診とクリーニングを行うことで、むし歯や歯周病の予防につながります。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">Q6. クレジットカードは使えますか？</p>
-            <p class="answer">
-              A.
-              お支払い方法については、現金のほかクレジットカードにも対応しております。
-              詳しい対応ブランドやお支払い方法については受付までお気軽にお問い合わせください。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A.
+                  お支払い方法については、現金のほかクレジットカードにも対応しております。
+                  詳しい対応ブランドやお支払い方法については受付までお気軽にお問い合わせください。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">Q7. 駐車場はありますか？</p>
-            <p class="answer">
-              A. はい、当院では患者さま専用の駐車場をご用意しております。
-              お車でも安心してご来院いただけます。
-              場所などの詳細はアクセスページをご確認ください。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A. はい、当院では患者さま専用の駐車場をご用意しております。
+                  お車でも安心してご来院いただけます。
+                  場所などの詳細はアクセスページをご確認ください。
+                </p>
+            </div>
           </div>
           <div class="question-item">
             <p class="question-ttl">
               Q8. 急に歯が痛くなった場合は診てもらえますか？
             </p>
-            <p class="answer">
-              A. 急な痛みやトラブルにもできる限り対応いたします。
-              ご予約の患者さまを優先してご案内しておりますので、
-              まずはお電話にてご連絡ください。
-            </p>
+            <div class="answer-wrap">
+                <p class="answer">
+                  A. 急な痛みやトラブルにもできる限り対応いたします。
+                  ご予約の患者さまを優先してご案内しておりますので、
+                  まずはお電話にてご連絡ください。
+                </p>
+            </div>
           </div>
         </section>
       </div>
