@@ -3,7 +3,8 @@
 /* 共通 */
 
 html {
-    font-size: 100%;
+    /* font-size: 100%; */
+    font-size: 16px;
 }
 
 body{
@@ -31,7 +32,8 @@ li {
 }
 
 .sec-ttl{
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
     text-align: center;
     margin: 120px 0;
 }
@@ -53,12 +55,14 @@ header{
 }
 
 .logo-main p{
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
     color: #144E94;
 }
 
 .logo-sub p{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2rem;
     color: #2967C4;
 }
 
@@ -83,7 +87,8 @@ header{
 }
 
 .reserve ul li p{
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -104,7 +109,8 @@ nav li:nth-child(4){
 }
 
 nav a{
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
 }
 
 /*** ファーストビュー ****/
@@ -144,7 +150,8 @@ video{
 
 /*** アバウト(当院について)セクション ****/
 .about h3{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2rem;
     margin: 64px 0;
 }
 
@@ -171,13 +178,15 @@ video{
 }
 
 .doctor-text p:nth-child(1){
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 1.75rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .doctor-text p:nth-child(2){
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
 }
 
 .hospital-introduction-item{
@@ -201,7 +210,8 @@ video{
 
 .hospital-introduction-text{
     width: 40%;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
     color: #2967C4;
 }
 
@@ -230,7 +240,8 @@ video{
 }
 
 .details-item p{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2rem;
 }
 
 /*** クエスチョン(よくあるご質問)セクション ****/
@@ -243,7 +254,8 @@ video{
 }
 
 .question-ttl{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2rem;
     z-index: 10;
     position: relative;
     cursor: pointer;
@@ -285,7 +297,8 @@ video{
 }
 
 .answer{
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
     padding: 32px 0;
     color: #2967C4;
 }
@@ -293,6 +306,10 @@ video{
 
 /************ スマフォサイズ **************/
 @media (max-width: 767px){
+    html{
+        font-size: 12px;
+    }
+
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -368,4 +385,5 @@ video{
     height: auto;
     padding: 20px;
   }
+
 }
