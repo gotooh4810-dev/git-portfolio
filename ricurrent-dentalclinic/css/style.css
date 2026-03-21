@@ -57,18 +57,22 @@ header {
 
 .logo-main p {
   /* font-size: 48px; */
-  font-size: 3rem;
+  font-size: 2rem;
   color: #144e94;
 }
 
 .logo-sub p {
   /* font-size: 32px; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #2967c4;
 }
 
 .logo-sub {
   display: flex;
+}
+
+.burger-btn{
+  display: none;
 }
 
 .reserve ul {
@@ -310,23 +314,31 @@ video {
   }
 
   /*** ヘッダー ***/
+  .header-inner{
+    /* align-items: center; */
+  }
+
+
+  .logo-sub img{
+    width: 10%;
+  }
+
+
   .burger-btn {
-    position: fixed;
+    /* position: fixed;
     top: 20px;
-    right: 3%;
+    right: 3%; */
     width: 30px;
-    height: 30px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s;
     z-index: 10;
-  }
-
-  .burger-btn:hover {
-    background-color: #f4f4f4;
+    position: relative;
+    display: block;
   }
 
   .burger-btn span {
+    display: block;
     width: 100%;
     height: 2px;
     background-color: #333;
@@ -354,43 +366,44 @@ video {
     top: 10px;
   }
 
+  .burger-btn p{
+    position: absolute;
+    bottom: 0;
+  }
+
   .is-open span {
     background-color: transparent;
   }
 
   .is-open span::before {
     top: 0;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
 
   .is-open span::after {
     top: 0;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reserve,
-  nav {
+  .header-contents{
     display: none;
   }
 
-  .reserve ul {
+  .header-contents.is-open{
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
   }
 
-  nav li {
-    border: none;
-    padding: 10px;
+  .is-open .reserve ul{
+    flex-direction: column;
+  }
+
+  .is-open nav ul{
+    flex-direction: column;
   }
 
 
