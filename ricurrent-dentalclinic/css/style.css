@@ -386,4 +386,13 @@ video{
     padding: 20px;
   }
 
+  .question-ttl{
+    padding-right: 40px;
+  }
+
+  .question-ttl::before,
+  .question-ttl::after{
+    right: 5%;
+  }
+
 }
