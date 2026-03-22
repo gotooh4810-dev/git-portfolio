@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* 共通 */
+html{
+  font-size: 16px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  display: block;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* テーブル部 */

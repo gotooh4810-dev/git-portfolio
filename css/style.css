@@ -246,7 +246,7 @@ main{
 
 .works-text a{
   margin-top: auto;
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
   color: red;
   position: relative;
   width: fit-content;
