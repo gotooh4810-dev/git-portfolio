@@ -1,13 +1,23 @@
 @charset "utf-8";
 
 /* 共通 */
+html{
+  font-size: 16px;
+}
+
 body{
-  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.font{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 li{
@@ -39,7 +49,7 @@ a{
 }
 
 .wrapper{
-  width: 95%;
+  width: 90%;
   /* max-width: 1200px; */
   margin: 0 auto;
 }
@@ -210,12 +220,18 @@ main{
 .works-img{
   width: 100%;
   height: 100%;
-  background-image: url(../img/mainvisual.jpg);
+  /* background-image: url(../img/recurrent-dentalclinic.png); */
   background-position: center;
   background-size: cover;
+  object-fit: cover;
+}
+
+.img-1{
+  background-image: url(../img/recurrent-dentalclinic.png);
 }
 
 .works-text{
+  font-size: 0.875rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -231,6 +247,8 @@ main{
 
 .works-text a{
   margin-top: auto;
+  letter-spacing: .5rem;
+  color: red;
 }
 
 .works li:hover .works-text{
@@ -244,7 +262,7 @@ main{
     overflow: visible;
     height: auto;
   }
-  
+
   .gradient{
     width: 90vw;
     height: 90vw;
