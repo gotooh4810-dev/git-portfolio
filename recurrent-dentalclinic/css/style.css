@@ -3,11 +3,12 @@
 /* 共通 */
 
 html {
-  /* font-size: 100%; */
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
+  padding-top: 150px;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
@@ -31,11 +32,13 @@ li {
   margin: 0 auto;
 }
 
+section{
+  scroll-margin-top: 150px;
+}
+
 .sec-ttl {
-  /* font-size: 48px; */
   font-size: 3rem;
   text-align: center;
-  /* margin: 120px 0; */
   margin: clamp(48px, 5vw, 120px) 0;
 }
 
@@ -55,15 +58,22 @@ header {
   padding-top: 20px;
 }
 
-.logo-main p {
-  /* font-size: 48px; */
-  font-size: 2rem;
+h1 span{
+  display: block;
+}
+
+h1 span:nth-of-type(2){
+  display: flex;
+  align-items: center;
+}
+
+.logo-main{
+  font-size: 3rem;
   color: #144e94;
 }
 
-.logo-sub p {
-  /* font-size: 32px; */
-  font-size: 1.5rem;
+.logo-sub{
+  font-size: 2rem;
   color: #2967c4;
 }
 
@@ -92,7 +102,6 @@ header {
 }
 
 .reserve ul li p {
-  /* font-size: 24px; */
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -114,7 +123,6 @@ nav li:last-of-type{
 }
 
 nav a {
-  /* font-size: 24px; */
   font-size: 1.5rem;
 }
 
@@ -127,7 +135,6 @@ video {
   width: 100%;
   height: calc(100vh - 150px);
   object-fit: cover;
-  margin-top: 150px;
   display: block;
 }
 
@@ -154,9 +161,7 @@ video {
 
 /*** アバウト(当院について)セクション ****/
 .about h3 {
-  /* font-size: 32px; */
   font-size: 2rem;
-  /* margin: 64px 0; */
   margin: clamp(32px, 3vw, 64px) 0;
 }
 
@@ -183,14 +188,12 @@ video {
 }
 
 .doctor-text p:nth-child(1) {
-  /* font-size: 28px; */
   font-size: 1.75rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .doctor-text p:nth-child(2) {
-  /* font-size: 20px; */
   font-size: 1.25rem;
 }
 
@@ -215,7 +218,6 @@ video {
 
 .hospital-introduction-text {
   width: 40%;
-  /* font-size: 24px; */
   font-size: 1.5rem;
   color: #2967c4;
 }
@@ -243,7 +245,6 @@ video {
 }
 
 .details-item p {
-  /* font-size: 32px; */
   font-size: 2rem;
 }
 
@@ -257,7 +258,6 @@ video {
 }
 
 .question-ttl {
-  /* font-size: 32px; */
   font-size: 2rem;
   z-index: 10;
   position: relative;
@@ -300,7 +300,6 @@ video {
 }
 
 .answer {
-  /* font-size: 24px; */
   font-size: 1.5rem;
   padding: 32px 0;
   color: #2967c4;
