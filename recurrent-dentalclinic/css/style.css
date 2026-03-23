@@ -42,7 +42,7 @@ section{
   margin: clamp(48px, 5vw, 120px) 0;
 }
 
-/********** ヘッダー **********/
+/*** ヘッダー ***/
 header {
   position: fixed;
   top: 0;
@@ -126,7 +126,7 @@ nav a {
   font-size: 1.5rem;
 }
 
-/*** ファーストビュー ****/
+/*** ファーストビュー ***/
 .fv {
   position: relative;
 }
@@ -159,7 +159,7 @@ video {
   width: 45%;
 }
 
-/*** アバウト(当院について)セクション ****/
+/*** アバウト(当院について)セクション ***/
 .about h3 {
   font-size: 2rem;
   margin: clamp(32px, 3vw, 64px) 0;
@@ -227,7 +227,7 @@ video {
   margin: 10px;
 }
 
-/*** ディティール(診療内容)セクション ****/
+/*** ディティール(診療内容)セクション ***/
 
 .details-cont {
   display: flex;
@@ -248,7 +248,7 @@ video {
   font-size: 2rem;
 }
 
-/*** クエスチョン(よくあるご質問)セクション ****/
+/*** クエスチョン(よくあるご質問)セクション ***/
 
 .question-item {
   text-align: center;
@@ -304,6 +304,47 @@ video {
   padding: 32px 0;
   color: #2967c4;
 }
+
+/*** アクセスセクション ***/
+.access-cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.left{
+  width: 50%;
+}
+
+.access-cont iframe{
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.right{
+  width: 45%;
+}
+
+.address{
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.access-cont img{
+  width: 100%;
+}
+
+
+/*** フッター ***/
+footer{
+  background-color: #d9d9d9;
+  padding-bottom: 32px;
+}
+
+
+
 
 /************ スマフォサイズ **************/
 @media (max-width: 767px) {
