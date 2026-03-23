@@ -58,3 +58,22 @@ th{
   width: 35%;
   object-fit: cover;
 }
+
+@media (max-width: 767px){
+  html{
+    font-size: 14px;
+  }
+
+  .figma{
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .figma img:first-of-type{
+    width: 100%;
+  }
+
+  .figma img:nth-of-type(2){
+    width: 100%;
+  }
+}
