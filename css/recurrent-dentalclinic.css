@@ -11,6 +11,19 @@ li{
 
 a{
   display: block;
+  width: fit-content;
+  padding: 32px 64px;
+  margin: 32px auto;
+  background-color: rgb(240, 63, 63);
+  color: #f4f4f4;
+  font-weight: 900;
+  box-shadow: 4px 4px 7px #333;
+  transition: all .3s;
+}
+
+a:hover{
+  translate: 0  5px;
+  box-shadow: none;
 }
 
 .wrapper{
@@ -20,3 +33,28 @@ a{
 }
 
 /* テーブル部 */
+th,
+td{
+  display: block;
+}
+
+th{
+  padding-top: 20px;
+}
+
+/* figmaセクション */
+.figma{
+  display: flex;
+  justify-content: space-between;
+}
+
+.figma img:first-of-type{
+  width: 60%;
+  height: fit-content;
+  object-fit: contain;
+}
+
+.figma img:nth-of-type(2){
+  width: 35%;
+  object-fit: cover;
+}
