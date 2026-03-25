@@ -39,3 +39,35 @@ li {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/*** ヘッダー ***/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(241, 238, 228, 0.25);
+  width: 100%;
+  padding: 12px;
+}
+
+h1 {
+  width: 200px;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a{
+  color: #ffffff;
+}
