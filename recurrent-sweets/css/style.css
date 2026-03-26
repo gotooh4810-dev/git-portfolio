@@ -151,6 +151,11 @@ nav a{
   margin-top: 62px;
 }
 
+.menu-img img{
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 .menu-text-contents {
   text-align: center;
   padding: 16px 10px;
