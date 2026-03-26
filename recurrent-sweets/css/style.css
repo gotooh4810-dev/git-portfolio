@@ -112,3 +112,36 @@ nav a{
 .about-text p + p {
   margin-top: 16px;
 }
+
+/* menuセクション */
+#menu {
+  background-color: #f1eee4;
+  padding: 80px 0;
+}
+
+#menu ul li + li {
+  margin-top: 62px;
+}
+
+.menu-text-contents {
+  text-align: center;
+  padding: 16px 10px;
+}
+
+.menu-name-main {
+  display: block;
+  font-size: 18px;
+}
+
+.menu-name-sub {
+  display: block;
+  font-size: 12px;
+  color: #a98c5f;
+  margin-top: 8px;
+}
+
+.menu-text {
+  font-size: 14px;
+  color: #a98c5f;
+  margin-top: 16px;
+}
