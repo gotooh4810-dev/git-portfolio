@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&family=Yomogi&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="./js/sctipt.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>    
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -66,44 +69,60 @@
           <p>ー 今月のケーキ ー</p>
         </h2>
         <div class="menu-contents">
-          <ul>
-            <li>
-              <div class="menu-img">
-                <img src="./img/menu1 .jpg" alt="ブルーベリーーケーキ" />
+          <div id="slider" class="splide">
+              <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="menu-img">
+                        <img src="./img/menu1 .jpg" alt="ブルーベリーーケーキ" />
+                      </div>
+                      <div class="menu-text-contents">
+                        <h3 class="menu-name">
+                          <span class="menu-name-main">ブルーベリーケーキ</span>
+                          <span class="menu-name-sub">- Blueberry cake -</span>
+                        </h3>
+                        <p class="menu-text"># 旬のブルーベリーをトッピング</p>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="menu-img">
+                        <img src="./img/menu2 .jpg" alt="ベリータルト" />
+                      </div>
+                      <div class="menu-text-contents">
+                        <h3 class="menu-name">
+                          <span class="menu-name-main">ベリータルト</span>
+                          <span class="menu-name-sub">- Berry tart -</span>
+                        </h3>
+                        <p class="menu-text"># 甘酸っぱいベリーとサクサクタルト</p>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="menu-img">
+                        <img src="./img/menu3 .jpg" alt="苺のショートケーキ" />
+                      </div>
+                      <div class="menu-text-contents">
+                        <h3 class="menu-name">
+                          <span class="menu-name-main">苺のショートケーキ</span>
+                          <span class="menu-name-sub">- Strawberry shortcake -</span>
+                        </h3>
+                        <p class="menu-text"># 旬のあまおう使用</p>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="menu-img">
+                        <img src="./img/menu4 .jpg" alt="抹茶のショートケーキ" />
+                      </div>
+                      <div class="menu-text-contents">
+                        <h3 class="menu-name">
+                          <span class="menu-name-main">抹茶のショートケーキ</span>
+                          <span class="menu-name-sub">- Matcha shortcake -</span>
+                        </h3>
+                        <p class="menu-text"># 京都産の抹茶を使用</p>
+                      </div>
+                    </li>
+                  </ul>
               </div>
-              <div class="menu-text-contents">
-                <h3 class="menu-name">
-                  <span class="menu-name-main">ブルーベリーケーキ</span>
-                  <span class="menu-name-sub">- Blueberry cake -</span>
-                </h3>
-                <p class="menu-text"># 旬のブルーベリーをトッピング</p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-img">
-                <img src="./img/menu2 .jpg" alt="ベリータルト" />
-            </div>
-              <div class="menu-text-contents">
-                <h3 class="menu-name">
-                  <span class="menu-name-main">ベリータルト</span>
-                  <span class="menu-name-sub">- Berry tart -</span>
-                </h3>
-                <p class="menu-text"># 甘酸っぱいベリーとサクサクタルト</p>
-              </div>
-            </li>
-            <li>
-              <div class="menu-img">
-                <img src="./img/menu3 .jpg" alt="苺のショートケーキ" />
-            </div>
-              <div class="menu-text-contents">
-                <h3 class="menu-name">
-                  <span class="menu-name-main">苺のショートケーキ</span>
-                  <span class="menu-name-sub">- Strawberry shortcake -</span>
-                </h3>
-                <p class="menu-text"># 旬のあまおう使用</p>
-              </div>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </section>

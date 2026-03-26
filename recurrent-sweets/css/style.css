@@ -70,7 +70,7 @@ header {
 
 h1 {
   width: fit-content;
-  font-size: 24px;
+  font-size: clamp(24px, 3vw, 48px);
   font-weight: 900;
   color: #fff;
   margin: 0 auto;
@@ -104,7 +104,7 @@ nav a{
 
 .fv p:first-of-type{
     color: #f1eee4;
-    font-size: 32px;
+    font-size: clamp(32px, 3vw, 48px);
     writing-mode: vertical-rl;
     position: absolute;
     bottom: 5%;
@@ -113,7 +113,7 @@ nav a{
 }
 
 .fv p:nth-of-type(2){
-    font-size: 40px;
+    font-size: clamp(40px, 3vw, 56px);
     font-weight: 900;
     color: #f1eee4;
     position: absolute;
@@ -267,4 +267,111 @@ nav a{
 
 .footer-copylight {
   font-size: 12px;
+}
+
+
+/**************** PCサイズ ******************/
+@media  (min-width: 768px) {
+  .header {
+    padding: 16px;
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1{
+    margin: 0;
+  }
+
+  nav a {
+    transition: opacity 0.3s;
+  }
+
+  nav a:hover {
+    opacity: 0.7;
+  }
+
+  .fv{
+    height: 100vh;
+  }
+
+  .fv p:nth-of-type(2){
+    font-size: 64px;
+  }
+
+  .about-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-img {
+    width: 50%;
+  }
+
+  .about-text {
+    width: 40%;
+    font-size: 16px;
+  }
+
+
+  .menu {
+    padding: 0 0 100px;
+  }
+
+ .splide__slide{
+    transition: all .3s ease;
+ }
+
+ .splide__slide.is-center{
+    transform: scale(1.1);
+ }
+
+ .menu-img{
+    width: 100%;
+ }
+
+  .shop {
+    background-image: url(../img/bg-shop.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+
+  .shop-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-submit {
+    margin-top: 0;
+    transition: opacity 0.3s;
+  }
+
+  .form-submit:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .footer-text {
+    margin-top: 12px;
+  }
+
+  .footer-nav-list {
+    gap: 40px;
+  }
+
+  .footer-copylight {
+    font-size: 13px;
+  }
 }
