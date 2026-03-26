@@ -40,6 +40,23 @@ li {
   margin: 0 auto;
 }
 
+.sec-ttl{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading-l{
+  color: #fff;
+}
+
+.sec-ttl p:first-of-type{
+  font-size: 40px;
+}
+
+.sec-ttl p:nth-of-type(2){
+  font-size: 12px;
+}
+
 /*** ヘッダー ***/
 
 header {
@@ -52,7 +69,7 @@ header {
 }
 
 h1 {
-  width: 200px;
+  width: fit-content;
   font-size: 24px;
   color: #fff;
   margin: 0 auto;
@@ -70,4 +87,28 @@ nav ul{
 
 nav a{
   color: #ffffff;
+}
+
+/*** ファーストビュー ***/
+.fv img {
+  width: 100%;
+}
+
+/*** aboutセクション ***/
+#about {
+  padding: 40px 0;
+  background-color: #f1eee4;
+}
+
+.about-text-contents {
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.about-text p + p {
+  margin-top: 16px;
 }
