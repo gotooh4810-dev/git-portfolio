@@ -1,3 +1,23 @@
+const scrollAnimations = document.querySelectorAll('.scroll-animation');
+
+window.addEventListener('scroll',() => {
+  scrollAnimations.forEach((scrollAnimation) => {
+    const rectTop = scrollAnimation.getBoundingClientRect().top;
+    if (window.innerHeight > rectTop + window.innerHeight/5) {
+      scrollAnimation.classList.add('active');
+    };
+  });
+});
+
+// window.addEventListener('scroll',() => {
+//   scrollAnimations.forEach((scrollAnimation) => {
+//     const rectTop = scrollAnimation.getBoundingClientRect().top;
+//     if (window.innerHeight*4/5 > rectTop) {
+//       scrollAnimation.classList.add('active');
+//     };
+//   });
+// });
+
 
   document.addEventListener('DOMContentLoaded', function () {
     new Splide('#slider', {

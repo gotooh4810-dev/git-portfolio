@@ -56,6 +56,17 @@ li {
   font-size: 12px;
 }
 
+.scroll-animation{
+  opacity: 0;
+  translate: 0 10px;
+  transition: all 1s;
+}
+
+.scroll-animation.active{
+  opacity: 1;
+  translate: 0 0;
+}
+
 /*** ヘッダー ***/
 
 header {
