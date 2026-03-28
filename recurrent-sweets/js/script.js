@@ -25,6 +25,5 @@ window.addEventListener('scroll',() => {
       interval:3000,
       speed:1000,
       pagination:false,
-      focus:'center',
     }).mount();
   });

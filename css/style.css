@@ -138,6 +138,10 @@ main{
   background-image: url(../img/portfolio.png);
 }
 
+.img-3{
+  background-image: url(../img/recurrent-sweets.png);
+}
+
 .works-text{
   font-size: 0.875rem;
   position: absolute;
