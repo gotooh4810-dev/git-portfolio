@@ -105,13 +105,12 @@ main{
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
   padding: 30px 0;
-  /* margin-right: 150px; */
   height: 100vh;
 }
 
 .works li{
+  /* aspect-ratio: 16 / 9; */
   width: 100%;
-  height: 100%;
   border: 1px solid #333;
   display: flex;
   flex-direction: column;
@@ -127,7 +126,6 @@ main{
   height: 100%;
   background-position: center;
   background-size: cover;
-  object-fit: cover;
 }
 
 .img-1{
@@ -135,15 +133,19 @@ main{
 }
 
 .img-2{
-  background-image: url(../img/portfolio.png);
-}
-
-.img-3{
   background-image: url(../img/recurrent-sweets.png);
 }
 
+.img-3{
+  background-image: url(../img/BIGSAVER.png);
+}
+
+.img-4{
+  background-image: url(../img/portfolio.png);
+}
+
 .works-text{
-  font-size: 0.875rem;
+  font-size: 1rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -155,22 +157,23 @@ main{
   transition: all .5s;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .works-text a{
   display: block;
-  margin-top: auto;
   color: red;
   position: relative;
   width: fit-content;
   margin: 0 auto;
   font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .works-text a::before{
   content: '';
   width: 0%;
-  height: 1px;
+  height: 2px;
   position: absolute;
   bottom: 0;
   background-color: red;
