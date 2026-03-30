@@ -17,7 +17,7 @@ body>a{
   display: block;
   width: fit-content;
   padding: 32px 64px;
-  margin: 32px auto;
+  margin: 32px auto 10px;
   background-color: rgb(240, 63, 63);
   color: #f4f4f4;
   font-weight: 900;
@@ -36,6 +36,10 @@ a:hover{
     margin: 0 auto;
 }
 
+img{
+  max-width: 100%;
+}
+
 /* テーブル部 */
 th,
 td{
@@ -50,6 +54,11 @@ td P{
   /* color: red; */
   font-size: 18px;
   font-weight: bold;
+}
+
+span{
+  display: block;
+  text-align: center;
 }
 
 /* figmaセクション */
@@ -67,6 +76,13 @@ td P{
 .figma img:nth-of-type(2){
   width: 35%;
   object-fit: cover;
+}
+
+.screen-shot ul{
+  margin: 64px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
 }
 
 @media (max-width: 767px){
