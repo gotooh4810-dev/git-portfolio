@@ -9,7 +9,11 @@ li{
   list-style-type: none;
 }
 
-a{
+table a{
+  color: red;
+}
+
+body>a{
   display: block;
   width: fit-content;
   padding: 32px 64px;
