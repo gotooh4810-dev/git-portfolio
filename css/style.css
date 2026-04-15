@@ -121,6 +121,10 @@ main{
   position: relative;
 }
 
+.works li:first-of-type {
+  grid-column: 1/3;
+}
+
 .works-img{
   width: 100%;
   height: 100%;
@@ -142,6 +146,10 @@ main{
 
 .img-4{
   background-image: url(../img/portfolio.png);
+}
+
+.img-5 {
+  background-image: url(../img/rcl.png);
 }
 
 .works-text{

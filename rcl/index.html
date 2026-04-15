@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurrent Create Service</title>
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- splideのcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- 自作のcss -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- splideのjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- splideのautoscrollのjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <!-- 自作のjs -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="loader">
+        <p>
+            <span>R</span>
+            <span>C</span>
+            <span>S</span>
+            <span>C</span>
+            <span>o</span>
+            <span>.</span>
+            <span>,</span>
+            <span>L</span>
+            <span>t</span>
+            <span>d</span>
+        </p>
+    </div>
+
+    <header>
+        <div class="wrapper header-inner">
+            <h1>
+                <a href=""><img src="./img/2025-11-21-portfolio-design-assignment-260327-groupwork_logo.svg" alt="ロゴ"></a>
+                <p class="logo-text">
+                    リカレントクリエイトサービス有限会社 <br>
+                    <span>-</span>
+                    <span>Recurrent</span>
+                    <span>Create</span>
+                    <span>Service</span>
+                    <span>Co.,Ltd.-</span>
+                </p>
+            </h1>
+            <div class="ham-btn">
+                <span></span>
+            </div>
+            <nav class="ham-cont">
+                <ul>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#achievement">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="fv">
+        <img src="./img/fv.jpg" alt="デスク画像">
+        <p>挑戦を、形に。</p>
+    </div>
+
+    <div class="line">
+        <div  class="splide slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="section-line" src="./img/company-line.png" alt="カンパニーセクションの区切り">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="section-line" src="./img/company-line.png" alt="カンパニーセクションの区切り">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="company">
+        <img class="company-img" src="./img/company.jpg" alt="会社画像">
+        <div class="company-text">
+            <p>戦略設計から一貫対応</p>
+            <p>
+                私たちは、戦略設計から運用まで一貫して対応しています。
+                その理由は、デザインや制作だけでなく、集客・SEO・コンバージョン改善まで含めた支援体制を整えているためです。
+                具体的には、ターゲット設定・キーワード設計・コンテンツ企画を行い、公開後も成果を伸ばし続けるWeb運用を実現します。
+            </p>
+        </div>
+        <div class="btn">
+            <a href="#contact">お問い合わせ</a>
+        </div>
+    </section>
+
+    <div class="splide slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/service-line.png" alt="サービスセクションの区切り">
+                </li>
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/service-line.png" alt="サービスセクションの区切り">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="service">
+        <ul class="service-contents wrapper">
+            <li>
+                <h2>service01</h2>
+                <div class="service-item">
+                    <img src="./img/net.png" alt="パソコンの画像">
+                    <div class="service-text">
+                        <h3>ホームページ制作・保守運営</h3>
+                        <p>企業の顔となるホームページを、企画・設計・デザイン・開発まで一貫して制作いたします。ヒアリングをもとに目的やターゲットを明確化し、ユーザーにとって使いやすく、企業の魅力がしっかり伝わるサイトを構築します。 公開後も更新作業やコンテンツ追加、セキュリティ対策、表示速度の改善など、継続的な運用・保守をサポート。長期的に安心して活用できるWeb環境を提供し、ビジネスの成長を支えます。</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>service02</h2>
+                <div class="service-item">
+                    <img src="./img/graph.png" alt="右肩上がりのグラフの画像">
+                    <div class="service-text">
+                        <h3>ランディングページ制作</h3>
+                        <p>商品やサービスの魅力を最大限に引き出し、成果につながるランディングページを制作いたします。ターゲットユーザーの行動や心理を分析し、訴求力の高い構成とデザインでコンバージョンを意識したページ設計を行います。 コピーライティングからビジュアル設計、フォーム最適化までトータルで対応し、広告との連動も考慮した効果的なLPを実現。改善提案やABテストにも対応し、継続的な成果向上をサポートします。</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>service03</h2>
+                <div class="service-item">
+                    <img src="./img/up.png" alt="サラリーマンが栄光の階段を駆け上がってる画像">
+                    <div class="service-text">
+                        <h3>WEB広告・チラシ作成</h3>
+                        <p>オンラインとオフラインの両面から集客を支援する広告制作を行っています。WEB広告では、媒体選定から運用設計、バナー・動画クリエイティブの制作まで一貫して対応し、費用対効果の高いプロモーションを実現します。 チラシやパンフレットなどの紙媒体についても、ターゲットに響くデザインと分かりやすい情報設計で制作。ブランドイメージの統一を図りながら、認知拡大や来店促進につながる施策をご提案します。</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="btn">
+            <a href="#contact">お問い合わせ</a>
+        </div>
+    </section>
+
+    <div class="splide slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/Achivement-line.png" alt="アチーブメントセクションの区切り">
+                </li>
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/Achivement-line.png" alt="アチーブメントセクションの区切り">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="achievement">
+        <div class="splide slider-2">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="splide slider-3">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="splide slider-2">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/star.png" alt="実績">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#contact">お問い合わせ</a>
+        </div>
+    </section>
+
+    <div class="splide slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/contact-line.webp" alt="コンタクトセクションの区切り">
+                </li>
+                <li class="splide__slide">
+                    <img class="section-line" src="./img/contact-line.webp" alt="コンタクトセクションの区切り">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="contact" class="wrapper">
+        <div class="contact-phase">
+            <p>STEP1 入力</p>
+            <p>STEP2 確認</p>
+            <p>STEP3 完了</p>
+        </div>
+        <p class="attention">*印の項目は、必ずご入力をお願いします。</p>
+        <table>
+            <tr>
+                <th>お名前</th>
+                <td><input type="text" placeholder="田中 太郎"></td>
+            </tr>
+            <tr>
+                <th>フリガナ</th>
+                <td><input type="text" placeholder="タナカ タロウ"></td>
+            </tr>
+            <tr>
+                <th>会社名/法人名/団体名</th>
+                <td><textarea name="message"></textarea></td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td>
+                    <input type="email" placeholder="guest@recurrent.com">
+                    <p>確認のためもう1度ご入力ください</p>
+                    <input type="email" placeholder="guest@recurrent.com">
+                </td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容</th>
+                <td><textarea name="message"></textarea></td>
+            </tr>
+        </table>
+        <div class="btn-3d">
+            <div class="btn-top">
+                <a href="#">確認</a>
+            </div>
+            <div class="btn-front">
+                <a href="#">確認</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper footer-inner">
+            <h1>
+                <img src="./img/2025-11-21-portfolio-design-assignment-260327-groupwork_logo.svg" alt="ロゴ">
+                <p class="logo-text">
+                    リカレントクリエイトサービス有限会社 <br>
+                    <span>-</span>
+                    <span>Recurrent</span>
+                    <span>Create</span>
+                    <span>Service</span>
+                    <span>Co.,Ltd.-</span>
+                </p>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
