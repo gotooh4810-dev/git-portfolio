@@ -40,13 +40,13 @@ li {
 }
 
 .btn {
-    max-width: 400px;
-    margin: 32px auto;
+    max-width: 300px;
+    margin: clamp(8px, 2vw, 32px) auto;
     text-align: center;
     border: 1px solid #333;
     border-radius: 300px;
     background-color: red;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .btn a {
@@ -253,7 +253,7 @@ h1 img {
 #company .btn {
     width: 100%;
     position: absolute;
-    bottom: 3%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -554,6 +554,8 @@ footer ul {
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        border-radius: 10px;
+        background-color: #f4f4f4;
     }
 
     .ham-btn span{
@@ -586,6 +588,7 @@ footer ul {
     }
 
     .ham-btn.is-open{
+        background-color: transparent;
         z-index: 20;
     }
 
@@ -640,6 +643,11 @@ footer ul {
     /*** ファーストビュー ***/
     .fv p{
         writing-mode: vertical-rl;
+    }
+
+    /*** カンパニーセクション ***/
+    #company .btn {
+        bottom: 0;
     }
 
     /*** サービスセクション ***/
