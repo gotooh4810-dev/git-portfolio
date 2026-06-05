@@ -298,12 +298,12 @@ main{
   }
   
   .burger-menu li{
-    margin: 50px 0;
-    padding-bottom: 25px;
+    margin: 20px 0;
+    padding-bottom: 5px;
     border-bottom: 1px solid #000;
   }
   
-  .burger-menu li:nth-child(5){
+  .burger-menu li:nth-child(6){
     border-bottom: none;
   }
   
