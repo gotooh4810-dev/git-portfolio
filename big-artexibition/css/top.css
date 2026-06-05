@@ -1,0 +1,701 @@
+@charset "UTF-8";
+/* 共通 */
+/* .scroll-content{
+    width: 375px;
+    transform: scale(
+        clamp(1, calc(100vw / 375px), 1.76)
+        );
+    transform-origin: top;
+} */
+
+
+
+
+/***** ファーストビュー *****/
+.fv-bottom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fv-bottom img {
+    width: calc(100% + 60px);
+    max-width: calc(100% + 60px);
+    margin-left: -30px;
+}
+
+.fv ul {
+    font-size: 1rem;
+}
+
+.fv li span {
+    font-size: .875rem;
+    display: block;
+}
+
+.fv li:last-child span {
+    font-size: 1rem;
+}
+
+.fv li a {
+    background-size: contain;
+    display: grid;
+    align-content: center;
+    gap: 2px;
+    color: #fff;
+    position: relative;
+    line-height: 1;
+    margin: -15px;
+}
+
+.fv li a::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/common/white_arrow.svg);
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: 54%;
+    translate: 0 -50%;
+}
+
+.fv li:first-child {
+    width: 210px;
+    filter: drop-shadow(3px 3px 4px rgb(247, 112, 44, .5));
+}
+
+.fv li:first-child a {
+    background-image: url(../img/top-page/bigart.webp);
+    aspect-ratio: 210.2/87.4;
+    padding-left: 10px;
+}
+
+.fv li:nth-child(2) {
+    width: 281px;
+    margin-left: auto;
+    filter: drop-shadow(3px 3px 4px rgb(247, 181, 44, .5));
+}
+
+.fv li:nth-child(2) a {
+    background-image: url(../img/top-page/workshop.webp);
+    aspect-ratio: 281.1/87.4;
+    text-align: center;
+    padding: 0 60px 0 30px;
+}
+
+.fv li:nth-child(2) a::after {
+    right: 30px;
+}
+
+.fv li:nth-child(2) a span:first-child {
+    text-align: left;
+}
+
+.fv li:nth-child(2) a span:last-child {
+    text-align: right;
+}
+
+.fv li:nth-child(3) {
+    width: 238px;
+    filter: drop-shadow(3px 3px 4px rgb(0, 158, 103, .5));
+}
+
+.fv li:nth-child(3) a {
+    background-image: url(../img/top-page/Tshirt.webp);
+    aspect-ratio: 238.2/87.4;
+    padding: 0 40px 0 50px;
+    margin: -30px;
+}
+
+.fv li:nth-child(3) a::after {
+    top: 60%;
+    right: 20px;
+}
+
+.fv li:nth-child(3) a span:last-child {
+    text-align: center;
+}
+
+/***** ファーストビュー *****/
+
+
+
+
+
+/***** わたしたちの想い *****/
+.about{
+    margin-top: 40px;
+    background-image: url(../img/top-page/Background.webp);
+    background-size: 130%;
+    background-position: bottom center;
+    padding-bottom: 8px;
+}
+
+.about-ttl{
+    width: 290px;
+    margin: auto;
+}
+
+
+.about-text{
+    text-align: center;
+    margin-top: -50px;
+    background-color: rgb(255, 255, 255, .9);
+    padding: 16px 0;
+}
+
+.about-text p{
+    line-height: 2;
+    margin-top: 32px;
+}
+
+.about-text span{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.about-text .orange-font{
+    color: #F7702C;
+}
+
+.about-text .yellow-font{
+    color: #F7B52C;
+}
+
+.about-text .green-font{
+    color: #009E67;
+}
+/***** わたしたちの想い *****/
+
+
+
+
+
+/***** 大アート展を知ろう *****/
+.art{
+    margin-top: 40px;
+}
+
+/* セクション　タイトル */
+.art-top {
+    position: relative;
+    width: 100%;
+}
+
+.art-ttl {
+    font-size: 1.5rem;
+    color: #fff;
+    /* background-image: url(../img/top-page/bigart.webp); */
+    background-image: url(../img/top-page/bigart.svg);
+    background-size: cover;
+    width: 250px;
+    aspect-ratio: 250/101;
+    padding: 32px 8px ;
+}
+
+.art-ttl span {
+    font-size: 1.25rem;
+}
+
+.art-top img {
+    width: calc(100% + 60px);
+    max-width: 100%;
+    margin-left: -30px;
+    position: absolute;
+    bottom: -60%;
+    z-index: -1;
+}
+
+/*日時・場所 */
+.art-schedule{
+    text-align: center;
+}
+.art-dete{
+    font-size: 4.375rem;
+}
+.art-dete span{
+    font-size: 1.25rem;
+    writing-mode: vertical-rl;
+}
+.art-txt{
+    font-size: 2rem;
+}
+
+
+/* ーー↓大アート展の内容ーー*/
+/* フォントサイズ */
+.art-content dt{
+    font-size: 1.25rem;
+}
+.art-content span{
+    font-size: 2.8125rem;
+}
+
+/* 見出し */
+.content-ttl{
+    display: flex;
+}
+
+/* きょうつう */
+.art-content div{
+    text-align: center;
+    padding-top: 20px;
+}
+.art-content dd{
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+/* おこられないらくがきべや */
+.art-room{
+    padding-top: 20px;
+}
+
+.art-room div{
+    flex-grow: 1;
+    border-bottom: #F7B52C dashed 3px;
+}
+.art-room span{
+    color: #F7B52C;
+}
+
+.art-room dd{
+    background-color: #F7B52C;
+    padding: 32px 16px;
+}
+
+/* ライブパフォーマンス*/
+.art-live{
+    padding-top: 10px;
+}
+.art-live div{
+    border-bottom: #E6009D dashed 3px;
+}
+.art-live span{
+    color: #E6009D;
+}
+.art-live dd{
+    background-color: #E6009D;
+    padding: 32px 45px;
+}
+
+/* オリジナルシール作成*/
+.art-seal{
+    padding-top: 10px;
+}
+.art-seal div{
+    border-bottom: #00E695 dashed 3px;
+}
+.art-seal span{
+    color: #00E695;
+}
+
+.art-seal dd{
+    background-color: #00E695;
+    padding: 32px 16px;
+}
+
+/* オリジナルTシャツ作成*/
+.art-tshirt{
+    padding-top: 10px;
+}
+.tshirt-ttl img{
+    width: 50px;
+}
+.art-tshirt div{
+    border-bottom: #0054A7 dashed 3px;
+}
+.art-tshirt span{
+    color: #0054A7;
+}
+.art-tshirt dd{
+    background-color: #3074B7;
+    padding: 32px 16px;
+}
+/* ーーー↑大アート展の内容ーーー*/
+.art-bot{
+    background-image: url(../img/top-page/En2.webp);
+    width: 100%;
+    aspect-ratio: 485/127;
+    background-size: contain;
+}
+/* .bot-img{ */
+    /* position: absolute;
+    top: -80%;
+    left: -15%;
+    width: 130%;
+    z-index: -1; */
+/* } */
+/***** 大アート展を知ろう *****/
+
+
+
+
+
+/***** 事前ワークショップに参加しよう *****/
+.workshop{
+    margin-top: 60px;
+}
+
+/* セクション　タイトル */
+.workshop-ttl{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    line-height: 1.2;
+    /* background-image: url(../img/top-page/workshop.webp); */
+    background-image: url(../img/top-page/workshop.svg);
+    background-size: contain;
+    aspect-ratio: 312/99;
+    width: 312px;
+    padding: 4px 37px 8px 33px;
+}
+
+.top-p {
+    text-align-last: left;
+}
+
+.bottom-p {
+    text-align: right;
+}
+
+.workshop-ttl span{
+    font-size: 1rem;
+}
+
+/* ワークショップスケジュールーーーーーーーーーーーーーーーー */
+.work-schedule{
+
+    padding-top: 5px;
+    padding-bottom: 60px;
+
+    background-image: url(../img/top-page/background2.webp);
+    background-position: 80%;
+    background-size: 130%;
+
+    /* position: absolute; */
+
+}
+
+/* .work-schedule {
+    background-image: url(../img/workshop/ws_schedule_back.svg);
+    background-size: 100%;
+    background-position: center;
+    padding: 40px 0;
+} */
+
+.work-schedule-item {
+    position: relative;
+    aspect-ratio: 293/56;
+    width: 293px;
+    margin: 30px auto 0;
+}
+
+.work-schedule-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.work-schedule dt {
+    width: 76px;
+    position: absolute;
+    bottom: -3px;
+    left: -10%;
+}
+
+.work-schedule div dd {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7B52C;
+    height: 100%;
+}
+
+
+.work-schedule dl div:nth-child(3n+2) dd {
+    background-color: #0054A7;
+}
+
+.work-schedule dl div:nth-child(3n+3) dd {
+    background-color: #E91B31;
+}
+
+.work-schedule div .bus-item dd {
+    /* align-items: flex-end; */
+    padding-right: 14px;
+}
+
+.work-schedule div .dontaku-item dd {
+    align-items: flex-start;
+    padding-left: 65px;
+    text-indent: -.1em;
+}
+
+.dontaku-item span {
+    margin-left: .8em;
+}
+
+.jrtrain-item span,
+.jrtrain-item-hakata span {
+    font-size: 0.75rem;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 14px;
+}
+
+
+/* 日程・時間・場所ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* .work-text{
+    margin-top: 662px;
+} */
+.work-text div{
+    display: flex;
+    gap: 10px;
+
+    margin-top: 16px;
+}
+.work-text dt{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+
+    background-image: url(../img/top-page/Box.webp);
+    background-size: contain;
+
+}
+.work-text dd{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.time dt{
+    padding: 13px 18px;
+}
+.fee dt{
+    padding: 13px 26px;
+}
+.venue dt{
+    flex-direction: column;
+    padding: 13px 34px;
+}
+.time, .fee{
+    align-items: center;
+}
+.venue dd{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.venue dd span{
+    font-size: 1rem;
+    
+    padding-left: 80px;
+}
+.venue dd p{
+    margin-top: 14px;
+}
+/***** 事前ワークショップ *****/
+
+
+
+
+
+/***** Tシャツデザイン *****/
+
+
+.t-design {
+    /* position: relative; */
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+    background-image: url(../img/top-page/t-design-bgi.webp);
+    background-size: 100% 100%;
+}
+
+
+/* .t-design-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+} */
+
+.t-design-ttl{
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: #009E67;
+    background-image: url(../img/top-page/t-design.svg);
+    background-size: contain;
+    background-position: center center;
+    aspect-ratio: 374/172;
+    display: grid;
+    align-content: center;
+    
+}
+
+.t-design-txt p{
+    padding-top : 12px;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.t-design-txt span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.t-design-txt-img{
+    margin-right: 32px;
+}
+
+.t-design-cont{
+    margin-top: 24px;
+}
+
+.t-design-cont dt{
+    font-size: 20px;
+}
+
+.t-design-cont dt::before,
+.t-design-cont dt::after {
+    content: "● ● ● ● ●";
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    /* margin-bottom: 16px; */
+}
+
+.t-design-cont dd img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.t-design-cont dd p{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 63px;
+}
+
+.t-design-cont dd p span{
+    font-size: 20px;
+}
+
+/***** Tシャツデザイン *****/
+
+
+
+
+
+/***** アクセス *****/
+.access{
+    /* margin-top: 150px; */
+    /* margin-bottom: 120px; */
+    padding-top: 36px;
+    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
+    position: relative;
+    color: #231815;
+    width: 100%;
+    /* background-image: url(../img/top-page/access-bgi.webp); */
+    background-image: url(../img/top-page/access-big.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.access-bgi{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+}
+
+.access-ttl{
+    font-size: 24px;
+    color: #231815;
+}
+
+
+.access-schedule {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.date-item dt img {
+    width: 70px; 
+    height: auto;
+
+}
+
+.date-item dd{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    translate: -40% -45%;
+}
+
+.date-item dd p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;color: #fff;
+}
+
+.access-txt {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.access-txt h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-indent: -2em;
+    padding-left: 2em;
+    line-height: 1.5em;
+}
+
+.access-txt p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.access-txt p:nth-of-type(5) {
+    margin-left: 4em;
+}
+
+/* フッター */
+footer{
+    margin-top: 40px;
+}
+/***** アクセス *****/
+
+/******************** レスポンシブ ********************/
+@media screen and (min-width:768px) {
+}

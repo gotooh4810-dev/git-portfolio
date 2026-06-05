@@ -1,0 +1,400 @@
+@charset "UTF-8";
+.art-ttl {
+    position: relative;
+}
+
+.art-ttl h1{
+    font-size: 2rem;
+    color: #fff;
+
+    background-image: url(../img/art-exhibition/animation.gif);
+    background-size: contain;
+
+    /* padding:58px 24px 44px 23px; */
+
+    padding: 15% 5%; 
+    width: 100%;
+
+}
+.art-ttl p{
+    font-size: 1.25rem;
+    color: #fff;
+
+    background-image: url(../img/art-exhibition/top_ttl_green.svg);
+    background-size: contain;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 197px; 
+    height: auto;
+    aspect-ratio: 197 / 97;
+
+    padding: 1.375rem 2.1875rem 1rem 1.375rem;
+    position: absolute;
+    bottom: -50px;
+    right: 15%;
+    z-index: 1;
+}
+
+.art-ttl p span{
+    font-size: 2rem;
+    line-height: 1;
+}
+.art-ttl img{
+    width: 100%;
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    z-index: -1;
+}
+.art-dete{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.art-dete li{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* 日付・場所 */
+.art-venue{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.art-venue p{
+    font-size: 1.25rem;
+    color: #fff;
+    background-image: url(../img/art-exhibition/top_place_orange.svg);
+
+    padding: 22px 19px;
+}
+.venue-text dt{
+    font-size: 2rem;
+    text-align: center;
+
+    border-bottom: #000000 3px dashed;
+}
+.venue-text dd{
+    font-size: 1rem;
+}
+
+/* about */
+.art-about{
+    margin-top: 28px;
+ 
+    margin-inline: auto;
+    background-image: url(../img/art-exhibition/about_alphabet.webp);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 442px;
+
+    padding-top: 96px;
+}
+.about-text{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7rem;
+
+    background-color: rgb(255, 255, 255, .9);
+    padding: 42px 6px 36px;
+}
+.about-text p{
+    margin-bottom: 20px;
+}
+.text-black{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.text-red{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #E60019;
+}
+/* めいん */
+.art-sec{
+    margin-top: 40px;
+}
+.sec-ttl{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.sec-ttl h2{
+    font-size: 1.5rem;
+    border-bottom: #000000 3px dashed;
+}
+.sec-ttl span{
+    font-size: 2.8125rem;
+}
+
+.art-sec p{
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+
+    margin-top: 15px;
+}
+.art-sec p span{
+    font-size: 1.25rem;
+}
+/* 怒られないらくがき部屋 */
+.art-room{
+    margin-inline: auto;
+    background-image: url(../img/art-exhibition/secton01_back.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 598px;
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+.room-cont{
+    padding-top: 73px;
+}
+
+/* ライブパフォーマンス */
+.art-live{
+    margin-inline: auto;
+    background-image: url(../img/art-exhibition/secton02_back.svg);
+    background-size: 100% 102%;
+    background-position: center;
+    width: 100%;
+    height: 525px;
+
+    color: #fff;
+}
+.live-cont h2{
+    border-bottom: #ffffff 3px dashed;
+}
+.live-cont{
+    padding-top: 71px;
+}
+.art-artist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.art-artist img{
+    width: 113px;
+}
+/* オリジナルシール作成  */
+.art-seal{
+    margin-inline: auto;
+    background-image: url(../img/art-exhibition/section03_back.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 474px;
+    position: relative;
+    margin-bottom: 24px;
+}
+.seal-cont{
+    padding-top: 49px;
+}
+.seal-ttl{
+    align-items: flex-end;
+}
+.sec-ttl h2 span{
+    font-size: 1rem;
+}
+
+/* 先着60名 オリジナルシール作成*/
+.first-seal p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 0;
+    display: inline-block;
+    margin-bottom: 24px;
+
+    line-height: 1;
+
+    background-image: url(../img/art-exhibition/section03_60ppl_green.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    
+    /* width: 100%;
+    height: 110px; */
+    
+    padding: 26px 19px;
+
+    position: absolute;
+    top: -30px;
+    right: 37px;
+    z-index: 1;
+}
+.first-seal p span{
+    font-size: 2.25rem;
+}
+
+
+/* オリジナルTシャツ作成  */
+.art-tshirt{
+    color: #ffffff;
+    margin-inline: auto;
+    background-image: url(../img/art-exhibition/section04_back.svg);
+    background-size: 100% 102%;
+    background-position: center;
+    width: 100%;
+    height: 478px;
+    margin-bottom: 24px;
+    position: relative;
+    margin-bottom: 24px;
+}
+.tshirt-cont{
+    padding-top: 114px;
+}
+.tshirt-ttl{
+    align-items: flex-end;
+}
+.tshirt-ttl h2{
+    border-bottom: #ffffff 3px dashed;
+}
+
+/* 先着60名 オリジナルTシャツ作成 */
+.first-tshirt p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 0;
+    display: inline-block;
+    margin-bottom: 24px;
+    line-height: 1;
+
+    background-image: url(../img/art-exhibition/section04_60ppl_blue.svg);
+    background-size: cover;
+    background-position: center;
+    
+    padding: 28px 24px 33px 21px;
+
+    position: absolute;
+    top: 0;
+    left: 21px;
+    z-index: 1;
+}
+.first-tshirt p span{
+    font-size: 2.25rem;
+}
+
+
+/* Tシャツデザイン  */
+.t-design-art {
+    margin-top: 50px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 156px;
+}
+
+
+.t-design-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* height: 100%; */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.t-design-ttl{
+    padding-top: 5px;
+    font-size: 2rem;
+    color: #F7702C;
+    background-image: url(../img/art-exhibition/section05_ttl_frame.svg);
+    background-size: contain;
+    background-position: center center;
+    aspect-ratio: 374/172;
+    display: grid;
+    align-content: center;
+    
+}
+
+.t-design-txt p{
+    margin-top: -60px;
+    padding-top : 12px;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.t-design-txt span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.t-design-txt ul{
+    margin-top: 24px;
+    line-height: 1.5;
+}
+
+.t-design-txt-img{
+    margin-top: -20px;
+    margin-right: 32px;
+}
+
+.t-design-cont{
+    margin-top: 24px;
+}
+
+.t-design-cont dt{
+    font-size: 20px;
+}
+
+.t-design-cont dt::before,
+.t-design-cont dt::after {
+    content: "● ● ● ● ●";
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    /* margin-bottom: 16px; */
+}
+
+.t-design-cont dd img{
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.t-design-cont dd p{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 63px;
+}
+
+.t-design-cont dd p span{
+    font-size: 20px;
+}
+.t-design-cont ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.t-design-cont ul li{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    
+}
+.t-design-cont ul li time{
+    font-size: 1.5rem;
+}
+.t-design-art .more-btn a{
+    margin-top: 29px;
+}
+footer{
+    margin-top: 40px;
+}
+
+/******************** レスポンシブ ********************/
+/* @media screen and (min-width:768px) {
+}   */

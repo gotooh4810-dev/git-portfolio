@@ -85,6 +85,15 @@ span{
   gap: 16px;
 }
 
+.group-work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-work img {
+  width: 20%;
+}
+
 @media (max-width: 767px){
   html{
     font-size: 14px;

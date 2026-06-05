@@ -1,0 +1,584 @@
+@charset "UTF-8";
+
+.scroll-content .fv, 
+.scroll-content main{
+    line-height: 1.7;
+}
+
+.scroll-content img {
+    vertical-align: bottom;
+}
+
+/* .scroll-content{
+    width: 375px;
+    transform: scale(
+        clamp(1, calc(100vw / 375px), 1.76)
+        );
+    transform-origin: top;
+} */
+
+/* ファーストビュー */
+.fv {
+    background-image: url(../img/workshop/top_ttl_back.svg);
+    background-size: 100%;
+    padding-top: 20px;
+}
+
+.workshop-ttl {
+    position: relative;
+}
+
+.workshop-ttl h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    color: #fff;
+    background-image: url(../img/workshop/work_animation.gif);
+    background-size: contain;
+    aspect-ratio: 341/148;
+    width: 100%;
+    padding: .1em 0;
+}
+
+.workshop-ttl h1 span:not(.span-db) {
+    font-size: 1.5rem;
+}
+
+.workshop-ttl .span-db {
+    display: block;
+}
+
+.workshop-ttl .span-db:first-child {
+    padding-left: .5em;
+}
+
+.workshop-ttl .span-db:nth-child(2) {
+    text-align: center;
+}
+
+.workshop-ttl .span-db:nth-child(3) {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.workshop-ttl p {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    translate: 0 20%;
+    background-image: url(../img/workshop/top_ttl_green.svg);
+    background-size: contain;
+    aspect-ratio: 175/85;
+    width: 160px;
+    padding-top: .3em;
+    padding-left: 0.5em;
+}
+
+.workshop-ttl p span {
+    display: block;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.work-about {
+    margin-top: 64px;
+    position: relative;
+}
+
+.work-about-frame {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* height: 100%; */
+    transform: translateX(-50%);
+    z-index: -10;
+    width: 100%;
+}
+
+.work-about-txt {
+    background-color: rgb(255, 255, 255, .9);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.work-about-txt p {
+    margin-top: 30px;
+}
+
+.work-about-txt p span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.work-about-txt .red-font {
+    color: #E60019;
+}
+
+.work-about-txt .blue-font {
+    color: #0054A7;
+}
+
+.work-about-txt .yellow-font {
+    color: #F7B52C;
+}
+
+.work-about-txt .green-font {
+    color: #009E67;
+}
+
+.work-about-txt .pink-font {
+    color: #EC7AAC;
+}
+
+
+
+
+
+/* メイン */
+main {
+    margin-top: 40px;
+}
+
+
+
+
+
+/* タイムスケジュール */
+
+.work-schedule {
+    background-image: url(../img/workshop/ws_schedule_back.svg);
+    background-size: 100%;
+    background-position: center;
+    padding: 40px 0;
+}
+
+.work-schedule-item {
+    position: relative;
+    aspect-ratio: 293/56;
+    width: 293px;
+    margin: 30px auto 0;
+}
+
+.work-schedule-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.work-schedule dt {
+    width: 76px;
+    position: absolute;
+    bottom: -3px;
+    left: -10%;
+}
+
+.work-schedule div dd {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7B52C;
+    height: 100%;
+}
+
+
+.work-schedule dl div:nth-child(3n+2) dd {
+    background-color: #0054A7;
+}
+
+.work-schedule dl div:nth-child(3n+3) dd {
+    background-color: #E91B31;
+}
+
+.work-schedule div .bus-item dd {
+    /* align-items: flex-end; */
+    padding-right: 14px;
+}
+
+.work-schedule div .dontaku-item dd {
+    align-items: flex-start;
+    padding-left: 65px;
+    text-indent: -.1em;
+}
+
+.dontaku-item span {
+    margin-left: .8em;
+}
+
+.jrtrain-item span,
+.jrtrain-item-hakata span {
+    font-size: 0.75rem;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 14px;
+}
+
+
+
+
+
+/* セクションスケジュール */
+.schedule-wrapper {
+    margin-top: 84px;
+    overflow-x: clip;
+}
+
+.schedule {
+    margin-top: 140px;
+    position: relative;
+}
+
+.schedule::after {
+    content: "";
+    display: inline-block;
+    width: 150%;
+    height: 120%;
+    background-image: url(../img/workshop/ws0726_back_orange.webp);
+    background-size: 100% 100%;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    translate: -50% 0;
+    z-index: -1;
+}
+
+time {
+    position: relative;
+    display: inline-block;
+    /* width: 118px; */
+    flex: 0;
+    flex-basis: 68px;
+}
+
+time::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    translate: 0 -50%;
+}
+
+time::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #0054A7;
+    position: absolute;
+    left: calc(100% + 15px);
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.schedule:nth-child(3n+2) time::after {
+    background-color: #E60019;
+}
+
+.schedule:nth-child(3n+3) time::after {
+    background-color: #F7B52C;
+}
+
+.schedule-cont ul {
+    position: relative;
+}
+
+.schedule-cont ul::before {
+    content: "";
+    height: 90%;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 87.5px;
+    top: 7px;
+}
+
+
+
+.schedule:nth-child(2)::after {
+    background-image: url(../img/workshop/ws0728_back_blue.webp);
+    width: 150%;
+    height: 110%;
+}
+
+.schedule:nth-child(3)::after {
+    background-image: url(../img/workshop/ws0801_back_red.webp);
+    margin-top: -40px;
+    top: 0;
+}
+
+.schedule:nth-child(4)::after {
+    background-image: url(../img/workshop/ws0813_back_orange.webp);
+    width: 140%;
+    height: 100%;
+}
+
+.schedule:nth-child(5)::after {
+    background-image: url(../img/workshop/ws0814_back_blue.webp);
+    margin-top: -50px;
+    top: 3%;
+    width:  160%;
+    height: 115%;
+}
+
+.schedule:nth-child(6)::after {
+    background-image: url(../img/workshop/ws0820_back_red.webp);
+    width: 100%;
+    height: 110%;
+}
+
+
+.schedule-ttl {
+    position: relative;
+    aspect-ratio: 320/87;
+    width: 320px;
+    margin-right: 5%;
+}
+
+.schedule-ttl img {
+    width: 125px;
+    position: absolute;
+    bottom: -3px;
+    left: -10%;
+}
+
+.schedule-ttl h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F7B52C;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.schedule-sabttl {
+    font-size: 1rem;
+}
+
+.schedule:nth-child(3n+2) h2 {
+    background-color: #0054A7;
+}
+
+.schedule:nth-child(3n+3) h2 {
+    background-color: #E91B31;
+}
+
+.schedule h2 span {
+    display: block;
+    width: 100%;
+}
+
+.schedule h2 {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.schedule h2 span:first-child {
+    text-align: left;
+    padding-left: 2.5em;
+}
+
+.schedule h2 span:last-child {
+    text-align: right;
+    padding-right: 1.25em;
+}
+
+.schedule-ttl p:nth-child(2) {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    font-size: 1rem;
+    color: #F7B52C;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 4px 24px;
+}
+
+.schedule-ttl p:nth-child(3) {
+    position: absolute;
+    top: calc(100% + 35px);
+    right: 0;
+    font-size: .625srem;
+    color: #fff;
+}
+
+.schedule:nth-child(3n+2) .schedule-ttl p:not(:nth-child(3)) {
+    color: #0054A7;
+}
+
+.schedule:nth-child(3n+3) .schedule-ttl p:not(:nth-child(3)) {
+    color: #E91B31;
+}
+
+
+.schedule-cont {
+    margin-top: 45px;
+}
+
+.schedule-cont ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-cont li {
+    font-size: 1.25rem;
+    color: #fff;
+    display: flex;
+    gap: 40px;
+}
+
+.artist {
+    margin-top: 20px;
+}
+
+.artist-desc {
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.artist-desc img {
+    width: 100px;
+}
+
+.artist-text h3 {
+    font-size: 1.25rem;
+}
+
+.artist-text p {
+    margin-top: 4px;
+}
+
+.insta {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.insta a {
+    width: 50px;
+}
+
+.insta p {
+    font-size: 0.6875rem;
+}
+
+.apply-btn {
+    margin-top: 16px;
+    color: #FFF;
+}
+
+.apply-btn a {
+    position: relative;
+    z-index: 1;
+    /* aspect-ratio: 224/83; */
+    width: 224px;
+    margin: auto;
+    padding: 20px 0 16px 16px;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.schedule:nth-child(2) .apply-btn a {
+    width: 186px;
+    padding: 68px 0 22px 20px;
+}
+
+.schedule:nth-child(3) .apply-btn a {
+    width: 229px;
+    padding: 52px 0 23px 11px;
+}
+
+.schedule:nth-child(4) .apply-btn a {
+    width: 236px;
+    padding: 15px 0 84px 67px;
+}
+
+.schedule:nth-child(5) .apply-btn a {
+    width: 185px;
+    padding: 15px 0 74px 14px;
+}
+
+.schedule:nth-child(6) .apply-btn a {
+    width: 234px;
+    padding: 36px 0 28px 16px;
+}
+
+.apply-btn img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.work-info {
+    margin: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.work-info h3 {
+    color: #FFF;
+    font-size: 1.25rem;
+    background-image: url(../img/workshop/target_orange.svg);
+    background-position: center center;
+    aspect-ratio: 117/58;
+    width: 117px;
+    margin: auto;
+    display: grid;
+    align-content: center;
+}
+
+.work-info h3:last-of-type {
+    margin-top: 30px;
+    width: 137px;
+}
+
+
+
+
+
+/* アクセス */
+.access {
+    margin-bottom: 0;
+}
+
+
+/******************** レスポンシブ ********************/
+@media screen and (min-width:1280px) {
+    .work-schedule {
+        margin-top: 100px;
+    }
+
+    .schedule-ttl {
+        margin: auto;
+    }
+}

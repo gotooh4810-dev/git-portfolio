@@ -1,0 +1,596 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    overflow-x: hidden;
+}
+
+.font-mochiy_pop_one {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-montserrat {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+iframe{
+    width: 100%;
+    aspect-ratio:336/197 ;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.more-btn a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px 12px;
+    background-color: #009E67;
+    border-radius: 50px;
+    color: #FFF;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.more-btn a img {
+    width: 20px;
+}
+
+.t-design .more-btn a{
+    background-color: #F7702C;
+}
+
+.pc {
+    display: none;
+}
+
+.scroll-content {
+    max-width: 640px;
+    margin: 80px auto 0;
+
+    width: 375px;
+    transform: scale(
+        clamp(1, calc(100vw / 375px), 1.76)
+        );
+    transform-origin: top;
+}
+
+/***** ヘッダー *****/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 20;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.apply-form {
+    display: flex;
+    gap: 8px;
+    text-align: center;
+}
+
+.apply-form a {
+    width: 100px;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px;
+    border: 3px #333 solid;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+}
+
+.apply-form a img {
+    width: 20%;
+}
+
+.apply-form a:first-of-type {
+    background-color: #0054A7;
+    position: relative;
+}
+
+.apply-form a:first-of-type::before {
+    content: '';
+    width: 60px;
+    aspect-ratio: 1;
+    background-image: url(../img/common/tshirt_eye.webp);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.apply-form a:nth-of-type(2) {
+    background-color: #00E695;
+    white-space: nowrap;
+    position: relative;
+}
+
+.apply-form a:nth-of-type(2)::after {
+    content: '';
+    width: 60px;
+    aspect-ratio: 1;
+    background-image: url(../img/common/workshop_eye.webp);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: -40px;
+}
+
+/***** ハンバーガー *****/
+
+.ham-btn {
+    width: 60px;
+    height: 50px;
+    background-color: #E60019;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ham-btn span {
+    width: 24px;
+    height: 3px;
+    background-color: #f4f4f4;
+    border-radius: 1px;
+    position: relative;
+    transition: all .3s;
+}
+
+.ham-btn span::before,
+.ham-btn span::after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    border-radius: 1px;
+    position: absolute;
+    transition: all .3s;
+}
+
+.ham-btn span::before {
+    bottom: 8px;
+}
+
+.ham-btn span::after {
+    top: 8px;
+}
+
+/* ハンバーガーメニューが開いてる時のボタン（Xの状態） */
+.ham-open .ham-btn span {
+    background-color: transparent;
+}
+
+.ham-open .ham-btn span::before {
+    bottom: 0;
+    rotate: 45deg;
+}
+
+.ham-open .ham-btn span::after {
+    top: 0;
+    rotate: -45deg;
+}
+
+/* ハンバーガーメニューのボタン　閉じてる時の中身 */
+.ham-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    z-index: -10;
+    opacity: 0;
+    visibility: hidden;
+    translate: 100% 0;
+    transition: all .3s;
+}
+
+.ham-open .ham-cont {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 0;
+}
+
+.ham-cont ul li {
+    border-radius: 200px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.ham-cont ul li:first-of-type {
+    border: 4px #F7B52C solid;
+}
+
+.ham-cont ul li:first-of-type a {
+    color: #F7B52C;
+}
+
+.ham-cont ul li:nth-of-type(2) {
+    border: 4px #E6009D solid;
+}
+
+.ham-cont ul li:nth-of-type(2) a {
+    color: #E6009D;
+}
+
+.ham-cont ul li:nth-of-type(3) {
+    border: 4px #00E695 solid;
+}
+
+.ham-cont ul li:nth-of-type(3) a {
+    color: #00E695;
+}
+
+.ham-cont ul li:nth-of-type(4) {
+    border: 4px #0054A7 solid;
+}
+
+.ham-cont ul li:nth-of-type(4) a {
+    color: #0054A7;
+}
+
+.ham-cont ul li:nth-of-type(5) {
+    border: 4px #F7702C solid;
+}
+
+.ham-cont ul li:nth-of-type(5) a {
+    color: #F7702C;
+}
+
+.sns-icon ul {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.sns-icon ul li:first-of-type,
+.sns-icon ul li:nth-of-type(2) {
+    border: none;
+}
+
+.sns-icon img {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+
+
+
+/***** フッター *****/
+footer {
+    background-color: #F3F3F3;
+    padding-bottom: 32px;
+    background-image: url(../img/common/D.webp),url(../img/common/K.webp),url(../img/common/G.webp),url(../img/common/C.webp);
+    background-position: right 8px top 47px,left 2px top 67px,right 5% top 150px,left center;
+    background-size: 13%, 17%, 13%, 12%;
+}
+
+footer .wrapper,
+.footer-nav,
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-nav {
+    text-align: center;
+}
+
+.footer-link {
+    gap: 24px;
+    line-height: 1.5;
+}
+
+.footer-link li:not(:last-child, :nth-last-child(2)) {
+    font-weight: bold;
+}
+
+.footer-link span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 4px auto 0;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 8px 10px;
+}
+
+.footer-link span::before {
+    content: "";
+    display: inline-block;
+    width: 15.16px;
+    height: 20px;
+    background-image: url(../img/common/tel.webp);
+    background-size: contain;
+}
+
+.footer-apply {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer-apply a {
+    width: 132px;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.footer-apply a::before {
+    content: '';
+    width: 30px;
+    aspect-ratio: 1;
+    background-image: url(../img/common/footer_iras.svg);
+    background-size: contain;
+    position: absolute;
+    top: -14px;
+    left: -4px;
+}
+
+
+
+.footer-sns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-sns li {
+    width: 24px;
+}
+
+.footer-organizer {
+    width: fit-content;
+    margin: auto;
+    /* line-height: 1; */
+}
+
+.footer-organizer small {
+    font-size: .625rem;
+    margin-top: 8px;
+}
+
+/***** アクセス *****/
+
+.access{
+    /* margin-top: 150px; */
+    /* margin-bottom: 120px; */
+    padding-top: 36px;
+    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
+    position: relative;
+    color: #231815;
+    width: 100%;
+    /* background-image: url(../img/top-page/access-bgi.webp); */
+    background-image: url(../img/top-page/access-big.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.access-bgi{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+}
+
+.access-ttl{
+    font-size: 24px;
+    color: #231815;
+}
+
+
+.access-schedule {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.date-item dt img {
+    width: 70px; 
+    height: auto;
+
+}
+
+.date-item dd{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    translate: -40% -45%;
+}
+
+.date-item dd p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;color: #fff;
+}
+
+.access-txt {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.access-txt h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-indent: -2em;
+    padding-left: 2em;
+    line-height: 1.5em;
+}
+
+.access-txt p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.access-txt p:nth-of-type(5) {
+    margin-left: 4em;
+}
+
+/* フッター */
+footer{
+    margin-top: 40px;
+}
+/***** アクセス *****/
+
+
+
+
+/***** レスポンシブ *****/
+@media screen and (min-width:1280px) {
+
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .ham-cont {
+        font-size: clamp(1.25rem, 0.309rem + 1.176vw, 1.5rem);
+    }
+
+    .scroll-content{
+        width: 430px;
+        transform: scale(
+            clamp(1, calc(100vw / 1280px), 1.49)
+            );
+        transform-origin: top;
+    }
+
+    .pc-left,
+    .pc-right {
+        width: calc((100% - calc(
+            430px * clamp(1, calc(100vw / 1280px), 1.49)
+        )) / 2);
+    }
+
+
+    .pc-left {
+        /* width: calc((100% - 640px) / 2); */
+        position: fixed;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/pc/back_1.svg);
+        
+    }
+
+    .pc-left .apply-form {
+        position: absolute;
+        top: 0;
+    }
+
+    .pc-left .apply-form  a {
+        bottom: none;
+        width: 150px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        font-size: 20px;
+        padding-top: 40px;
+        border: none;
+    }
+
+    .pc-left .apply-form a:first-of-type::before {
+        width: 100px;
+        transform: rotate(90deg);
+        top: -30px;
+    }
+
+    .pc-left .apply-form a:nth-of-type(2)::after {
+        width: 100px;
+        transform: rotate(-45deg);
+        top: -30px;
+        z-index: -1;
+    }
+
+    .pc-left>img{
+        width: 90%;
+    }
+
+    .pc-right {
+        opacity: 1;
+        visibility: visible;
+        translate: 0 0;
+        /* width: calc((100% - 640px) / 2); */
+        left: initial;
+        right: 0;
+        background-image: url(../img/pc/back_2.svg);
+    }
+
+
+
+    footer {
+        margin-top: 120px;
+    }
+}
